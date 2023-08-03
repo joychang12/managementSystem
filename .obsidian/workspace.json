@@ -147,5 +147,18 @@
     }
   },
   "active": "2acac1118540f9cd",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "managementSystem/target/classes/META-INF/maven/com.example/managementSystem/pom.xml",
+    "managementSystem/target/classes/META-INF/maven/com.example/managementSystem/pom.properties",
+    "managementSystem/target/classes/META-INF/maven/com.example/managementSystem",
+    "managementSystem/target/classes/META-INF/maven/com.example",
+    "managementSystem/target/classes/META-INF/maven",
+    "managementSystem/target/classes/META-INF/MANIFEST.MF",
+    "managementSystem/target/classes/META-INF",
+    "managementSystem/target/classes/application.properties",
+    "managementSystem/target/test-classes/com/example/managementSystem/ManagementSystemApplicationTests.class",
+    "managementSystem/target/test-classes/com/example/managementSystem",
+    "managementSystem/target/test-classes/com/example",
+    "managementSystem/HELP.md"
+  ]
 }
