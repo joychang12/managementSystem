@@ -38,7 +38,6 @@ public class UserController {
 		if (u != null) {
 			u.setName(user.getName());
 			userRespository.save(u);
-			
 			return "Update User";
 		} else {
 			return "Update fail, User not found!";
@@ -54,7 +53,7 @@ public class UserController {
 	}
 	
 	@GetMapping("/users/{userId}")
-	public  User findUser(@PathVariable Integer userId) {
+	public User findUser(@PathVariable Integer userId) {
 		
 		User user = userRespository.findById(userId).orElse(null);
 		return user;
