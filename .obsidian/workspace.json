@@ -150,15 +150,15 @@
   "lastOpenFiles": [
     "backend",
     "未命名檔案夾",
-    "managementSystem/target/classes/META-INF/maven/com.example/managementSystem/pom.xml",
-    "managementSystem/target/classes/META-INF/maven/com.example/managementSystem/pom.properties",
-    "managementSystem/target/classes/META-INF/maven/com.example/managementSystem",
-    "managementSystem/target/classes/META-INF/maven/com.example",
-    "managementSystem/target/classes/META-INF/maven",
-    "managementSystem/target/classes/META-INF/MANIFEST.MF",
-    "managementSystem/target/classes/META-INF",
-    "managementSystem/target/classes/application.properties",
-    "managementSystem/target/test-classes/com/example/managementSystem/ManagementSystemApplicationTests.class",
-    "managementSystem/HELP.md"
+    "backend/managementSystem/target/classes/META-INF/maven/com.example/managementSystem/pom.xml",
+    "backend/managementSystem/target/classes/META-INF/maven/com.example/managementSystem/pom.properties",
+    "backend/managementSystem/target/classes/META-INF/maven/com.example/managementSystem",
+    "backend/managementSystem/target/classes/META-INF/maven/com.example",
+    "backend/managementSystem/target/classes/META-INF/maven",
+    "backend/managementSystem/target/classes/META-INF/MANIFEST.MF",
+    "backend/managementSystem/target/classes/META-INF",
+    "backend/managementSystem/target/classes/application.properties",
+    "backend/managementSystem/target/test-classes/com/example/managementSystem/ManagementSystemApplicationTests.class",
+    "backend/managementSystem/HELP.md"
   ]
 }
