@@ -146,8 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2acac1118540f9cd",
+  "active": "1293c51418324c7d",
   "lastOpenFiles": [
+    "front/README.md",
+    "README.md",
     "backend",
     "未命名檔案夾",
     "backend/managementSystem/target/classes/META-INF/maven/com.example/managementSystem/pom.xml",
@@ -158,7 +160,6 @@
     "backend/managementSystem/target/classes/META-INF/MANIFEST.MF",
     "backend/managementSystem/target/classes/META-INF",
     "backend/managementSystem/target/classes/application.properties",
-    "backend/managementSystem/target/test-classes/com/example/managementSystem/ManagementSystemApplicationTests.class",
     "backend/managementSystem/HELP.md"
   ]
 }
