@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.managementSystem.model.User;
@@ -18,12 +19,13 @@ import com.example.managementSystem.respository.UserRespository;
 
 @CrossOrigin("*")
 @RestController
+@RequestMapping("/api/v1/users")
 public class UserController {
 	
 	@Autowired
 	private UserRespository userRespository;
 	
-	@PostMapping("/insertUser")
+	@PostMapping
 	public String insert(@RequestBody User user) {
 		
 		userRespository.save(user);
@@ -62,7 +64,7 @@ public class UserController {
 		return user;
 	}
 	
-	@GetMapping("/allUser")
+	@GetMapping
 	public Iterable<User> findAllUser() {
 		return userRespository.findAll();
 	}
