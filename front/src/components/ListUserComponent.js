@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import userService from '../services/userService'
-import { Link } from 'react-router-dom'
 
 const ListUserComponent = () => {
 
@@ -20,7 +19,6 @@ const ListUserComponent = () => {
   return (
     <div className='container'>
         <h2 className='text-center'>List Users</h2>
-        <Link to = "/add-user" className='btn btn-primary mb-2'>Add User</Link>
         <table className='table table-bordered table-striped'>
             <thead>
                 <th>User ID</th>
