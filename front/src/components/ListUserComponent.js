@@ -18,7 +18,8 @@ const ListUserComponent = () => {
 
   return (
     <div className='container'>
-        <h2 className='text-center'>List Users</h2>
+        <br />
+        <h2 className='text-center'>List Users</h2><br />
         <table className='table table-bordered table-striped'>
             <thead>
                 <th>User ID</th>

@@ -34,7 +34,7 @@ const AddUserComponent = () => {
                   <label className='form-label'>User Name :</label>
                   <input
                     type='text'
-                    placeholder='Enter Name'
+                    placeholder='Enter Your Name'
                     name='name'
                     className='form-control'
                     value={name}
@@ -43,8 +43,10 @@ const AddUserComponent = () => {
                     </input>    
                 </div>
                 
-                <button className='btn btn-success' onClick={(e) => saveUser(e)}>Submit</button>
-                <Link to="/users" className='btn btn-danger'>Cancel</Link>
+                <div className='d-grid gap-2 d-md-flex justify-content md-end'>
+                  <button className='btn btn-outline-success' onClick={(e) => saveUser(e)}>Submit</button>
+                  <Link to="/users" className='btn btn-outline-danger'>Cancel</Link>
+                </div>
               </form>
             </div>
           </div>
