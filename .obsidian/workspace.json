@@ -11,8 +11,12 @@
             "id": "6997ca74f1d1010f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "front/README.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "front/README.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "front/README.md"
+                "file": "README.md"
               }
             }
           }
@@ -142,10 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2acac1118540f9cd",
+  "active": "6997ca74f1d1010f",
   "lastOpenFiles": [
-    "README.md",
     "front/README.md",
+    "README.md",
     "backend",
     "未命名檔案夾",
     "backend/managementSystem/target/classes/META-INF/maven/com.example/managementSystem/pom.xml",
