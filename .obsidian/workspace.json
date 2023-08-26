@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "478e991275750df3",
+        "id": "cda67fe4e3fbf950",
         "type": "tabs",
         "children": [
           {
-            "id": "1293c51418324c7d",
+            "id": "6997ca74f1d1010f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "front/README.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
