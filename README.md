@@ -4,4 +4,5 @@ Front :
 
 Backend : 
 * Spring Boot 
-	* CRUD Backend with MySQL
+	* Spring Boot JPA
+	* MySQL
