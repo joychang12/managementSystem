@@ -1,24 +1,56 @@
-import React, {useState} from 'react'
-import { Link, useNavigate } from 'react-router-dom';
+import React, {useEffect, useState} from 'react'
+import { Link, useNavigate, useParams} from 'react-router-dom';
 import userService from '../services/userService';
+import { getDefaultNormalizer } from '@testing-library/react';
 
 const AddUserComponent = () => {
 
   const [name, setName] = useState("")
   const navigate = useNavigate()
+  const {id} = useParams()
 
-  const saveUser = (e) => {
+  const saveOrUpdateUser = (e) => {
     e.preventDefault();
 
     const user = {name}
 
-    userService.createUser(user).then((response) => {
-      console.log(response.data)
+    if(id){
+      userService.updateUser(id, user).then((response) => {
+        navigate('/users')
+      }).catch(error => {
+        console.log(error)
+      }
 
-      navigate('/users')
+      )
+    } else {
+      userService.createUser(user).then((response) => {
+        console.log(response.data)
+  
+        navigate('/users')
+      }).catch(error => {
+        console.log(error)
+      })
+    }
+
+    
+  }
+
+  useEffect(() => {
+
+    userService.getUserById(id).then((response) => {
+      setName(response.data.name)
     }).catch(error => {
       console.log(error)
     })
+
+  }, [id])
+
+  const title = () => {
+    if (id) {
+      return <h2 className='text-center'>Update User</h2>
+    } else {
+      return <h2 className='text-center'>Create User</h2>
+    }
   }
 
   return (
@@ -27,7 +59,9 @@ const AddUserComponent = () => {
       <div className='container'>
         <div className='row'>
           <div className='card col-md-6 offset-md-3 offset-md-3'>
-            <h2 className='text-center'>Create User</h2>
+            {
+              title()
+            }
             <div className='card-body'>
               <form>
                 <div className='form-group mb-2'>
@@ -44,7 +78,7 @@ const AddUserComponent = () => {
                 </div>
                 
                 <div className='d-grid gap-2 d-md-flex justify-content md-end'>
-                  <button className='btn btn-outline-success' onClick={(e) => saveUser(e)}>Submit</button>
+                  <button className='btn btn-outline-success' onClick={(e) => saveOrUpdateUser(e)}>Submit</button>
                   <Link to="/users" className='btn btn-outline-danger'>Cancel</Link>
                 </div>
               </form>

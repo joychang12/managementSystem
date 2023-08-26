@@ -13,9 +13,10 @@ function App() {
         <HeaderComponent />
         <div className='container'>
           <Routes>
-            <Route exact path = "/" element ={<ListUserComponent />}></Route>
-            <Route path = "/users" element ={<ListUserComponent />}></Route>
-            <Route path = "/add-user" element ={<AddUserComponent />}></Route>
+            <Route exact path = "/" element = {<ListUserComponent />}></Route>
+            <Route path = "/users" element = {<ListUserComponent />}></Route>
+            <Route path = "/add-user" element = {<AddUserComponent />}></Route>
+            <Route path='/edit-user/:id' element = {<AddUserComponent />}></Route>
           </Routes>
         </div>
         

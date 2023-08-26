@@ -34,7 +34,7 @@ public class UserController {
 		
 	}
 	
-	@PutMapping("/users/{userId}")
+	@PutMapping("{userId}")
 	public String update(@PathVariable Integer userId,
 						 @RequestBody User user) {
 		
@@ -50,14 +50,14 @@ public class UserController {
 		
 	}
 	
-	@DeleteMapping("/users/{userId}")
+	@DeleteMapping("{userId}")
 	public String delete(@PathVariable Integer userId) {
 		
 		userRespository.deleteById(userId);
 		return "Delete User";
 	}
 	
-	@GetMapping("/users/{userId}")
+	@GetMapping("/{userId}")
 	public User findUser(@PathVariable Integer userId) {
 		
 		User user = userRespository.findById(userId).orElse(null);
